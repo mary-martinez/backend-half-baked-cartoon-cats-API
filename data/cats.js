@@ -73,4 +73,13 @@ const cats = [
   },
 ];
 
+const catsData = () => {
+  const data = cats.map((cat) => {
+    console.log(`('${cat.name}', '${cat.type}', '${cat.url}', ${cat.year}, ${cat.lives}, ${cat.isSidekick})`);
+    // return (cat.name, cat.type, cat.url, cat.year, cat.lives, cat.is_sidekick);
+  });
+  // console.log('data', data);
+};
+catsData();
+
 module.exports = { cats };
